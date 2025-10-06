@@ -1,82 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <title>Home Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page - Shoptec</title>
+  
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-   <header> 
-    <nav class="menu">
-      <img src="./imagens/logo2.png" alt="Logo da Shoptec" class="logo">
-      <a href="#" class="link-menu">LOJA <i class="fa-solid fa-chevron-down seta-baixo"></i></a>
-      <a href="#" class="link-menu">BLOG</a>
-      <a href="#" class="link-menu ativo">SOBRE</a>
-    </nav>
 
-  <!-- Ícones -->
-      <div class="icones">
-      <button class="botao-icone" aria-label="Buscar">
-          <i class="fa-solid fa-magnifying-glass lupa"></i>
-      </button>
-      <button class="botao-icone" aria-label="Conta">
-          <i class="fa-solid fa-user usuario"></i>
-      </button>
-      <button class="botao-icone carrinho" aria-label="Carrinho">
-          <i class="fa-solid fa-bag-shopping sacola"></i>
-          <span class="numero-carrinho">0</span>
-      </button>
+  
+  <h1 class="topo">Envio grátis para compras acima de R$499,00</h1>
+
+  
+  <header>
+    <div class="header-inner">
+      
+      
+      <div class="logo">
+        <img src="imagens/ezgif.com-crop_3.gif" alt="Logo da Shoptec">
       </div>
-    </header>
-    <main>
-        <h1>Bem vindo a Shoptec!
-            Aqui você encontra os melhores produtos de vestimenta e acessórios para o seu dia a dia.</h1>
-            <h2>Confira nossos produtos</h2>
-            <a href ="produtos.html">Produtos</a>
-    </main>
-    <section class="novidades">
-        <h2>Novidades</h2>
-        <p>Fique por dentro das últimas novidades e promoções exclusivas da Shoptec. Não perca nossas ofertas especiais!</p>
-        <a href="./OfertasDoMes/index.html">Novidades</a>
-    </section>
-    <section class="newsletter">
-        <h2>
-            Inscreva-se na nossa Newsletter para receber atualizações e ofertas diretamente no seu e-mail.
-        </h2>
-        <form class ="form-mail">
-            <label for="email">Seu melhor e-mail</label>
-            <input type="email" id="email" placeholder="Seu email">
-             
-        </form>
-        <form class="form-nome">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" placeholder="Seu nome">
-        </form>
-        <button type="submit">Assinar!</button>
-        <label class="label">
-            <input type="checkbox"> Desejo receber emails diariamente.
-        </label>
-        
-    </section>
-    <footer>
-        <p>
-        &copy; 2025 Shoptec. Todos os direitos reservados.
-        </p>
-        <p>
-            Contato:
-            <a href="mailto:"></a>
-        </p>
-        
-        <div class="social">
-            <a href="#">X</a>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Nosso Trabalho</a>
 
-    </footer> 
+      
+      <nav class="menu" aria-label="Main navigation">
+        <a href="loja/index.html" class="link-menu">LOJA</a>
+        <a href="about/index.html" class="link-menu">SOBRE</a>
+        <a href="OfertasDoMes/index.html" class="link-menu">OFERTAS DO MÊS</a>
+        <a href="Formulario/formulario.html" class="link-menu">CONTATO</a>
+      </nav>
+
+      
+      <div class="icones">
+        <button class="botao-icone" aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="botao-icone" aria-label="Conta">
+          <i class="fa-solid fa-user"></i>
+        </button>
+        <button class="botao-icone carrinho" aria-label="Carrinho">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="numero-carrinho">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  
+  <main class="main">
+    <img src="imagens/fundo copy.png" alt="" class="imagem-fundo">
+
+    <h2 class="produtos">Confira nossos produtos:</h2>
+
     
+    <div class="container-video">
+      <video autoplay loop muted>
+        <source src="imagens/D471A0744.02.00_video.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted>
+        <source src="imagens/D471A0722.01.00_video.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted>
+        <source src="imagens/D471A0713.02.00_video.mp4" type="video/mp4">
+      </video>
+      <video autoplay loop muted>
+        <source src="imagens/D471A0741.02.00_video.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    
+    <section class="novidades">
+      <h2>Novidades</h2>
+      <p>Fique por dentro das últimas novidades e promoções exclusivas da Shoptec. Não perca nossas ofertas especiais!</p>
+      <a href="loja/index.html">Ver Novidades</a>
+    </section>
+
+    
+    <section class="newsletter">
+      <h2>Inscreva-se na nossa Newsletter</h2>
+      <p>Receba atualizações e ofertas diretamente no seu e-mail.</p>
+      
+      <form class="form-mail">
+        <label for="email">Seu melhor e-mail</label>
+        <input type="email" id="email" placeholder="Seu email">
+      </form>
+
+      <form class="form-nome">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Seu nome">
+      </form>
+
+      <button type="submit">Assinar!</button>
+
+      <label class="label">
+        <input type="checkbox"> Desejo receber emails diariamente.
+      </label>
+    </section>
+  </main>
+
+  
+  <footer class="footer">
+    <div class="links">
+      <p>&copy; 2025 Shoptec. Todos os direitos reservados.</p>
+      <a href="#">Contato: contato@shoptec.com</a>
+      <a href="https://dontpad.com/trabalhofinalSerratec2025/2" target="_blank">Política de Privacidade</a>
+      <a href="https://dontpad.com/trabalhofinalSerratec2025/2" target="_blank">Envio & Pagamentos</a>
+    </div>
+
+    <div class="social">
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://br.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="https://www.tiktok.com/login?redirect_url=https%3A%2F%2Fwww.tiktok.com%2Fpt-BR%2F&lang=en&enter_method=mandatory"
+        target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://x.com/" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      
+    </div>
+  </footer>
+
+  <button id="btn-topo"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script>
+    
+    window.addEventListener("scroll", function(){
+      const navbar = document.getElementById("navbar");
+      if(window.scrollY > 50){
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+
+   
+    const btnTopo = document.getElementById("btn-topo");
+    window.addEventListener("scroll", function(){
+      btnTopo.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    btnTopo.addEventListener("click", function(){
+      window.scrollTo({top: 0, behavior: "smooth"});
+    });
+  </script>
 
 </body>
 </html>
