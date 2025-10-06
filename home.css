@@ -292,6 +292,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 1rem 2rem;
+    font-size: 0.875rem;
     background: #111827;
     color: #fff;
   }
