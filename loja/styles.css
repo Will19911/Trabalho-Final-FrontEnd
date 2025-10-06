@@ -1,0 +1,172 @@
+.top-bar {
+  background: #f8f8f8;
+  text-align: center;
+  padding: 0.3125rem;
+  font-size: 0.875rem;
+}
+
+.logo-img {
+  height: 4.375rem;
+  object-fit: contain;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.375rem;
+}
+
+.navbar-nav .nav-link {
+  margin: 0 0.625rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.navbar-link:hover {
+  background: #f2f2f2;
+  color: #3B82F6;
+}
+
+.botao-icone {
+  background: none;
+  border: none;
+  color: #111827;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-right: 10px;
+  margin: 10px;
+}
+
+.numero-carrinho {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+}
+
+.botao-icone:hover {
+  background-color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  font-family: Arial, sans-serif;
+  border-top: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.footer .links a {
+  margin-right: 0.9375rem;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.footer .links a:hover {
+  text-decoration: underline;
+}
+
+.footer .footer-logo img {
+  height: 3.125rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer .social {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer .social a {
+  font-size: 1.125rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.camisa-hover {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.camisa-hover img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.5s ease;
+}
+
+.camisa-hover .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.camisa-hover:hover .front {
+  opacity: 0;
+}
+
+.camisa-hover:hover .back {
+  opacity: 1;
+}
+
+.tamanhos {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.tamanhos input {
+  display: none;
+}
+
+.tamanhos label {
+  position: relative;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  color: #111;
+  cursor: pointer;
+  padding-bottom: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.tamanhos label::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #111;
+  transition: width 0.25s ease;
+}
+
+.tamanhos label:hover::after {
+  width: 100%;
+}
+
+.tamanhos input:checked+label {
+  color: #111;
+  font-weight: 500;
+}
+
+.tamanhos input:checked+label::after {
+  width: 100%;
+}
