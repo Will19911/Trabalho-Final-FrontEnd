@@ -197,7 +197,7 @@ h1 {
     }
 }
 
-/* ========== FOOTER NOVO - INÍCIO ========== */
+/* ========== FOOTER ========== */
 
 .footer {
     display: flex;
@@ -244,5 +244,3 @@ h1 {
 .footer .social a:hover {
     color: #4A90E2;
 }
-
-/* ========== FOOTER NOVO - FIM ========== */
