@@ -139,6 +139,7 @@ header {
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
+  width: 100%;
 }
 
 .container-video video {
