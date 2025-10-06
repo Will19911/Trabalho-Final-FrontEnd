@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    
+    /* Centralização perfeita com Flexbox */
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    width: 90%; 
+    max-width: 400px;
+}
+
+
+.box {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 100%; 
+}
+
+fieldset {
+    border: 3px solid dodgerblue;
+}
+
+legend {
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white; 
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    /* CORREÇÃO: Adiciona padding lateral para afastar o texto da borda */
+    padding-left: 5px; 
+}
+
+.inputUser::placeholder {
+    color: #FFFFFF; 
+    opacity: 0.8; 
+}
+
+.labelInput {
+    position: absolute;
+    /* Ajustado o LEFT para levar em conta o padding-left do input */
+    top: 0;
+    left: 5px; /* CORREÇÃO: Ajustado para mover a label flutuante */
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+    top: -25px;
+    font-size: 12px;
+    color: dodgerblue;
+    /* Mantém o alinhamento da label quando flutua */
+    left: 5px; 
+}
+
+.box input[type="text"][placeholder] {
+    margin-bottom: 10px;
+    background: none; 
+    border: none;
+    border-bottom: 1px solid white; 
+    outline: none;
+    color: white; 
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+    /* CORREÇÃO: Adiciona padding lateral para afastar o texto da borda */
+    padding-left: 5px; 
+}
+
+.box input[type="text"][placeholder]::placeholder {
+    color: #FFFFFF; 
+    opacity: 0.8; 
+}
+
+
+#dataNascimento {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.botao {
+    background-image: linear-gradient(to right, #1c7ff1, rgb(34, 14, 72));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    color: white; 
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    background-image: linear-gradient(to right, rgb(34, 14, 72), #1c7ff1);
+}
