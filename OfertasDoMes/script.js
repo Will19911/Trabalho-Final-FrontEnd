@@ -14,14 +14,14 @@ const descontos = [
     imagem2: "assets/Blusa1.webp"
   },
   {
-    nome: "Moletom core basic ii fz verdant green",
+    nome: "Moletom  verdant green",
     precoOriginal: 249.90,
     precoDesconto: 196.90,
     imagem1: "assets/CasacoVerde1.webp",
     imagem2: "assets/CasacoVerde2.webp"
   },
   {
-    nome: "Tênis skate authentic black white",
+    nome: "Tênis skate black white",
     precoOriginal: 199.90,
     precoDesconto: 159.90,
     imagem1: "assets/Tenis1.webp",
@@ -35,7 +35,7 @@ const descontos = [
     imagem2: "assets/Bone2.webp"
   },
   {
-    nome: "Óculos squared shades black",
+    nome: "Óculos shades black",
     precoOriginal: 179.99,
     precoDesconto: 143.90,
     imagem1: "assets/Oculos1.webp",
