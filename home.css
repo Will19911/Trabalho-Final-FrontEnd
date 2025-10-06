@@ -296,6 +296,7 @@ footer {
     background: #111827;
     color: #fff;
   }
+
   .footer .links a {
     margin-right: 0.9375rem;
     font-weight: bold;
@@ -304,12 +305,22 @@ footer {
     text-decoration: none;
   }
 
+  .links a:hover{
+   
+    color:#2563EB
+  }
+
   .footer .social a {
     margin-left: 0.9375rem;
     color: #fffefe;
     font-size: 1.25rem;
     text-decoration: none;
     padding-left: 1rem;
+  }
+
+  .social a:hover{
+    
+    color:#2563EB
   }
 
   #btn-topo {
